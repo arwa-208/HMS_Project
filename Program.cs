@@ -357,7 +357,7 @@
                 {
                     if (admitted[i] == true)
                     {
-                        bool matchKeyword = keyword == "" || patientNames[i].ToLower().Contains(keyword)
+                    bool matchKeyword = keyword == "" || patientNames[i].ToLower().Contains(keyword);
     
                     if (matchKeyword)
                         {
@@ -450,6 +450,7 @@
             {
                 Console.WriteLine("Most Visited Patients:");
                 Console.WriteLine("----------------------------------");
+            int maxVisits = visitCount[0];
 
                 for (int i = 0; i <= patientIndex; i++)
                 {
